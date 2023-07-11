@@ -6,7 +6,7 @@ import logo from '../images/logo.svg'
 const Container = styled.div`
     display: flex;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     & button{
         background:#111B54;
         width: max-content;

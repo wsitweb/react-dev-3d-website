@@ -7,3 +7,13 @@ body,
   height: 100%;
   background: #0e1129;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #F05AEC;    /* цвет бегунка */
+  border-radius: 20px;
+}

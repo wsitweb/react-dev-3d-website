@@ -72,11 +72,13 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     gap: 80px;
-    @media(max-height: 650px){
+    @media(max-height: 410px){
       gap: 0;
+      justify-content: space-between;
     }
     @media(max-width: 768px){
       width: 100%;
+      padding: 0;
     }
     .wrap{
       backdrop-filter: blur(20px);
@@ -86,7 +88,7 @@ const Left = styled.div`
       transition: 1s;
       
       @media(max-width: 768px){
-        padding: 1vw;
+        padding: 4vw;
       }
       &:hover{
         border: 2px solid rgba(255,255,255, 0.8 );
@@ -124,6 +126,9 @@ const Left = styled.div`
       backdrop-filter: blur(20px);
       color: white;
       transition: .5s;
+      @media(max-width: 768px){
+        font-size: 2.1vw;
+      }
       &:hover{
         border: 1px solid rgba(255,255,255, 0.8);
         transform: translateY(-3px) scale(1.03);
