@@ -6,6 +6,8 @@ import IconLaptop from '../images/icon-laptop.svg'
 import IconTwitter from '../images/icon-twitter.svg'
 import IconYoutube from '../images/icon-youtube.svg'
 import Menu from './Menu'
+import SplineSans from '../fonts/Spline_Sans/SplineSans-VariableFont_wght.ttf'
+import SplineSansMono from '../fonts/Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf'
 
 const sizeFactor = (window.innerHeight + window.innerWidth) / 3000
 
@@ -23,11 +25,11 @@ const Container = styled.div`
     }
     @font-face {
       font-family: 'Spline Sans';
-      src: url('./src/fonts/Spline_Sans/SplineSans-VariableFont_wght.ttf');
+      src: url(${SplineSans});
     }
     @font-face {
       font-family: 'Spline Sans Mono';
-      src: url('./src/fonts/Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf');
+      src: url(${SplineSansMono});
     }
     @media(max-width: 768px){
       justify-content: center;

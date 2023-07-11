@@ -6188,7 +6188,7 @@ void main() {
             }
         }
     }
-`;function vse(){return ll(mse,{children:[ll(gse,{children:[Qt("li",{children:Qt("img",{src:fse,alt:"logo"})}),Qt("li",{children:Qt("a",{href:"/",children:"Home"})}),Qt("li",{children:Qt("a",{href:"/",children:"Download"})}),Qt("li",{children:Qt("a",{href:"/",children:"App"})}),Qt("li",{children:Qt("a",{href:"/",children:"Login"})})]}),Qt("button",{children:"Get Started"})]})}const yse=(window.innerHeight+window.innerWidth)/3e3,xse=$l.div`
+`;function vse(){return ll(mse,{children:[ll(gse,{children:[Qt("li",{children:Qt("img",{src:fse,alt:"logo"})}),Qt("li",{children:Qt("a",{href:"/",children:"Home"})}),Qt("li",{children:Qt("a",{href:"/",children:"Download"})}),Qt("li",{children:Qt("a",{href:"/",children:"App"})}),Qt("li",{children:Qt("a",{href:"/",children:"Login"})})]}),Qt("button",{children:"Get Started"})]})}const yse=""+new URL("SplineSans-VariableFont_wght-b773b695.ttf",import.meta.url).href,xse=""+new URL("SplineSansMono-VariableFont_wght-086fcd8c.ttf",import.meta.url).href,wse=(window.innerHeight+window.innerWidth)/3e3,bse=$l.div`
     display: flex;
     width: 100%;
     height: 100vh;
@@ -6202,11 +6202,11 @@ void main() {
     }
     @font-face {
       font-family: 'Spline Sans';
-      src: url('./src/fonts/Spline_Sans/SplineSans-VariableFont_wght.ttf');
+      src: url(${yse});
     }
     @font-face {
       font-family: 'Spline Sans Mono';
-      src: url('./src/fonts/Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf');
+      src: url(${xse});
     }
     @media(max-width: 768px){
       justify-content: center;
@@ -6214,7 +6214,7 @@ void main() {
       max-height: 100vh;
       width: 100%;
     }
-`,wse=$l.div`
+`,_se=$l.div`
     padding: 150px 0 0 30px;
     display: flex;
     flex-direction: column;
@@ -6236,7 +6236,7 @@ void main() {
     @media(max-width: 768px){
       display: none;
     }
-`,bse=$l.div`
+`,Sse=$l.div`
     z-index: 1;
     padding: 30px 0 0 0;
     height: 100%;
@@ -6310,7 +6310,7 @@ void main() {
         margin-right: 12px;
       }
     }
-`,_se=$l.div`
+`,Mse=$l.div`
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -6327,8 +6327,8 @@ void main() {
       canvas{
         position: absolute;
         right: 0;
-        scale: ${yse};
+        scale: ${wse};
         transform-origin: right;
       }
     }
-`;function Sse(){return ll(xse,{children:[ll(wse,{children:[Qt("div",{}),Qt("img",{src:dse,alt:"Twitter"}),Qt("img",{src:pse,alt:"Twitter"})]}),ll(bse,{children:[Qt(vse,{}),ll("div",{className:"wrap",children:[Qt("h1",{children:"Collaborate with people"}),Qt("p",{children:"Bring your team together and build your community by using our cross-platform app that lets you collaborate via chat, voice and by sharing and storing unlimited media files. A world of topics is waiting for you. Join the private beta."}),ll("button",{children:[Qt("img",{src:cse,alt:"Download"}),"Download for Mac"]})]})]}),Qt(_se,{children:Qt(one,{className:"spline",scene:"https://prod.spline.design/z4NBYRiLT91dosNL/scene.splinecode"})})]})}function Mse(){return Qt(Sse,{})}const Ase=document.getElementById("root"),Ese=y3(Ase);Ese.render(Qt(sr.StrictMode,{children:Qt(Mse,{})}));
+`;function Ase(){return ll(bse,{children:[ll(_se,{children:[Qt("div",{}),Qt("img",{src:dse,alt:"Twitter"}),Qt("img",{src:pse,alt:"Twitter"})]}),ll(Sse,{children:[Qt(vse,{}),ll("div",{className:"wrap",children:[Qt("h1",{children:"Collaborate with people"}),Qt("p",{children:"Bring your team together and build your community by using our cross-platform app that lets you collaborate via chat, voice and by sharing and storing unlimited media files. A world of topics is waiting for you. Join the private beta."}),ll("button",{children:[Qt("img",{src:cse,alt:"Download"}),"Download for Mac"]})]})]}),Qt(Mse,{children:Qt(one,{className:"spline",scene:"https://prod.spline.design/z4NBYRiLT91dosNL/scene.splinecode"})})]})}function Ese(){return Qt(Ase,{})}const Cse=document.getElementById("root"),Tse=y3(Cse);Tse.render(Qt(sr.StrictMode,{children:Qt(Ese,{})}));
