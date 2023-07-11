@@ -8,9 +8,6 @@ import IconYoutube from '../images/icon-youtube.svg'
 import Menu from './Menu'
 
 const sizeFactor = (window.innerHeight + window.innerWidth) / 3000
-const logoGit = document.querySelector('.logo')
-logoGit.href = 'https://github.com/wsitweb/react-dev-3d-website'
-logoGit.style.backgroundImage = "url('https://static-00.iconduck.com/assets.00/github-icon-512x497-oppthre2.png')"
 
 const Container = styled.div`
     display: flex;

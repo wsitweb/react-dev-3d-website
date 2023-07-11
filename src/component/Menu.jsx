@@ -10,6 +10,7 @@ const Container = styled.div`
     & button{
         background:#111B54;
         width: max-content;
+        white-space: nowrap;
     }
 `
 const List = styled.ul`
