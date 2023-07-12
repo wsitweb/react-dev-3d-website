@@ -7,6 +7,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     width: fit-content;
+    margin: 0 -20px;
+    padding: 0 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
     & button{
         background:#111B54;
         width: max-content;

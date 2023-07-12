@@ -19,7 +19,7 @@ const Container = styled.div`
     font-size: 16px;
     color: white;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
     @media (max-height: 574px) {
       overflow-y: auto;
     }
@@ -160,6 +160,19 @@ const Right = styled.div`
         transform-origin: right;
       }
     }
+    .video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center right;
+      transform: translate(-50%, -50%);
+      transform-origin: center;
+      position: absolute;
+      filter: blur(1px);
+      margin: 0 auto;
+      top: 50%;
+      left: 50%;
+    }
 `
 
 function Preview() {
@@ -182,7 +195,9 @@ function Preview() {
             </div>
         </Left>
         <Right>
-          <Spline className='spline' scene="https://prod.spline.design/z4NBYRiLT91dosNL/scene.splinecode"/>
+          {navigator.appVersion.includes('Android') ? <video className='video' src={'./src/video/bg.webm'} video autoPlay muted>
+          </video>
+            :<Spline className='spline' scene="https://prod.spline.design/z4NBYRiLT91dosNL/scene.splinecode"/>}
         </Right>
     </Container>
   )
